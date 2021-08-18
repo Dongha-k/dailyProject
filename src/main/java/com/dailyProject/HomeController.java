@@ -7,8 +7,12 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+
 @Controller
 public class HomeController {
+
     @RequestMapping("/")
     public String home(){
         return "index";
